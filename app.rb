@@ -10,9 +10,9 @@ class App < Sinatra::Base
         puts "#{params[:name]}"
         erb :team
     end
-    # binding.pry
-
+    
     post '/team' do
+        # binding.pry
         @name = params[:name]
         @coach = params[:coach]
         @pg = params[:pg]
