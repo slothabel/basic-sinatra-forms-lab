@@ -6,10 +6,10 @@ class App < Sinatra::Base
         erb :newteam
     end
     
-    get '/team' do
-        puts "#{params[:name]}"
-        erb :team
-    end
+    # get '/team' do
+    #     puts "#{params[:name]}"
+    #     erb :team
+    # end
     
     post '/team' do
         # binding.pry
